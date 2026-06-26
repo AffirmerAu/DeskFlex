@@ -4,50 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DeskFlex — Desk break reminders by Affirmer</title>
-<meta name="description" content="A workplace wellbeing tool by Affirmer. Move every hour, feel better — with a 2-minute desk-break timer, scheduled reminders and guided stretches.">
+<meta name="description" content="A workplace wellbeing tool by Affirmer. Move every hour, feel better — a 2-minute desk-break timer, a spin-the-wheel randomiser, posture flips and guided stretches.">
 <link rel="icon" href="data:image/gif;base64,R0lGODlh8ADwANU/AEeR3WGh4UGN2ziI2UWQ3FWa35zE7ZrD7D2L25jB7IG051KX3z6L23iu5mun5IO06DaH2W2o5D+N25bA61ye4Yq56YC055G964y66lGW33Or5U6V3leb4F+f4UiS3Z/G7V6f4W6p5GWj4qHH7oS26Im56W+p5Gek45/F7Yu56TuK20KO3HKq5WSi4oS16EmS3Y676mKi4lic4GKh4k+W3kKO202V3n2x51aa4JC963+z51yd4HWt5jWF2TOF2QAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4xLWMwMDIgNzkuYTZhNjM5NjhhLCAyMDI0LzAzLzA2LTExOjUyOjA1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjUuMTIgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJBNjk1QkFERDkzRjExRUZCMzk5RENGMUUxN0QwM0EyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJBNjk1QkFFRDkzRjExRUZCMzk5RENGMUUxN0QwM0EyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkE2OTVCQUJEOTNGMTFFRkIzOTlEQ0YxRTE3RDAzQTIiIHN0UmVmOmRvY3VtZW50SUQ9Inht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">
 
-<!-- ===========================================================
-     AFFIRMER — Colours & Type (design tokens, import first)
-     Anchored on Affirmer Blue #3385d9 · Brand typeface: Poppins
-     =========================================================== -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 :root{
-  /* Brand blue scale */
   --blue-50:#eef5fc; --blue-100:#d6e7f8; --blue-200:#aecff1; --blue-300:#7fb2e8;
   --blue-400:#5499e0; --blue-500:#3385d9; --blue-600:#2a6fb8; --blue-700:#225a97;
   --blue-800:#1b4677; --blue-900:#143356;
-  /* Ink / cool-slate neutrals */
   --ink-900:#0f1b2a; --ink-800:#16263a; --ink-700:#2a3a4d; --ink-600:#475a6e;
   --ink-500:#6a7d92; --ink-400:#93a3b5; --ink-300:#c2cdda;
   --line:#e2e8f0; --line-strong:#cdd7e3;
-  /* Surfaces */
   --surface:#ffffff; --surface-2:#f5f8fc; --surface-3:#eef4fb;
-  /* WHS semantic signals */
   --safe:#1f9d57; --caution:#f5a623; --danger:#e0413a;
-  /* Type */
   --font:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-  /* Radii */
   --r-sm:10px; --r-md:14px; --r-lg:20px; --r-xl:28px; --r-pill:999px;
-  /* Shadows (soft, cool-tinted) */
   --shadow-sm:0 2px 8px rgba(15,27,42,.07);
   --shadow-md:0 8px 24px rgba(15,27,42,.10);
   --shadow-lg:0 18px 48px rgba(15,27,42,.30);
   --shadow-blue:0 10px 28px rgba(51,133,217,.30);
 
-  /* ---- Active theme: "Soft Blue" mood from the DeskFlex comp ---- */
-  --accent:var(--blue-500);
-  --accent-soft:#eef5fc;
-  --accent-border:rgba(51,133,217,.20);
-  --app-card:#ffffff;
-  --ink:#0f1b2a;
-  --muted:#475a6e;
-  --card-line:#d6e7f8;
-  --track:#dbe8f7;
-  --ph-bg:#eef5fc;
-  --ph-border:rgba(51,133,217,.20);
+  /* Active theme: "Soft Blue" mood */
+  --accent:var(--blue-500); --accent-soft:#eef5fc; --accent-border:rgba(51,133,217,.20);
+  --app-card:#ffffff; --ink:#0f1b2a; --muted:#475a6e; --card-line:#d6e7f8;
+  --track:#dbe8f7; --ph-bg:#eef5fc; --ph-border:rgba(51,133,217,.20);
   --app-bg:linear-gradient(165deg,#eef5fc 0%,#d6e7f8 100%);
 }
 
@@ -56,8 +38,8 @@
 html,body{margin:0;padding:0}
 body{
   font-family:var(--font); color:var(--ink);
-  background:var(--app-bg); background-attachment:fixed;
-  min-height:100vh; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  background:var(--app-bg); background-attachment:fixed; min-height:100vh;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
   display:flex; flex-direction:column; align-items:center;
   padding:28px 16px max(28px,env(safe-area-inset-bottom));
 }
@@ -66,7 +48,6 @@ button{font-family:var(--font)}
 ::-webkit-scrollbar{width:8px;height:8px}
 ::-webkit-scrollbar-thumb{background:rgba(120,140,160,.3);border-radius:999px}
 
-/* keyframes */
 @keyframes dfPop{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
 @keyframes dfFade{from{opacity:0}to{opacity:1}}
 @keyframes dfPing{0%{transform:scale(.85);opacity:.55}70%{transform:scale(1.7);opacity:0}100%{opacity:0}}
@@ -77,7 +58,6 @@ button{font-family:var(--font)}
 @keyframes figFlex{0%,100%{transform:rotate(0)}30%{transform:rotate(-34deg)}62%{transform:rotate(30deg)}}
 @keyframes figOpen{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.32)}}
 
-/* ===================== Layout ===================== */
 .app{width:min(468px,100%);display:flex;flex-direction:column;gap:18px}
 
 /* Header */
@@ -86,17 +66,20 @@ button{font-family:var(--font)}
 .brand img{display:block;width:30px;height:30px}
 .brand .name{font-weight:700;font-size:22px;letter-spacing:-.02em;color:var(--ink-800);line-height:1.05}
 .brand .tag{font-weight:500;font-size:11px;letter-spacing:.03em;color:var(--muted)}
-.rem{display:flex;align-items:center;gap:9px;background:none;border:none;cursor:pointer;padding:6px 2px}
-.rem .lbl{font-weight:600;font-size:12px;color:var(--muted)}
-.switch{width:46px;height:27px;border-radius:var(--r-pill);padding:3px;display:flex;align-items:center;background:#cbd5e1;transition:background .2s ease}
-.switch.on{background:var(--accent)}
-.knob{width:21px;height:21px;border-radius:var(--r-pill);background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transform:translateX(0);transition:transform .2s ease}
-.switch.on .knob{transform:translateX(19px)}
+.day-pill{display:flex;align-items:center;gap:7px;background:var(--app-card);border:1px solid var(--card-line);border-radius:var(--r-pill);padding:7px 12px}
+.day-pill .d{width:7px;height:7px;border-radius:var(--r-pill);background:var(--safe)}
+.day-pill .d.off{background:var(--ink-400)}
+.day-pill span{font-weight:600;font-size:11px;color:var(--muted)}
 
 /* Cards */
 .card{background:var(--app-card);border:1px solid var(--card-line);box-shadow:var(--shadow-md)}
-.timer{border-radius:var(--r-xl);padding:26px 24px 24px;text-align:center}
-.sched{border-radius:var(--r-lg);padding:18px 20px}
+.main{border-radius:var(--r-xl);padding:20px 24px 24px;text-align:center}
+.settings{border-radius:var(--r-lg);padding:8px 20px 14px}
+
+/* Segmented mode switch */
+.seg{display:flex;gap:4px;background:var(--ph-bg);border:1px solid var(--card-line);border-radius:var(--r-pill);padding:4px;margin-bottom:20px}
+.seg button{flex:1;height:38px;border:none;border-radius:var(--r-pill);background:transparent;color:var(--muted);font-weight:600;font-size:13px;cursor:pointer;transition:color .15s ease,background .15s ease}
+.seg button.active{background:var(--app-card);color:var(--accent);box-shadow:var(--shadow-sm)}
 
 /* Timer ring */
 .ring-wrap{position:relative;width:236px;height:236px;margin:0 auto}
@@ -113,22 +96,44 @@ button{font-family:var(--font)}
 .btn:active{transform:scale(.98)}
 .btn-primary{flex:1;height:50px;background:var(--accent);color:#fff;font-size:16px;box-shadow:var(--shadow-blue)}
 .btn-primary:hover{filter:brightness(.94)}
-.btn-ghost{width:96px;height:50px;background:transparent;border:1px solid var(--card-line);color:var(--muted);font-size:15px}
+.btn-ghost{height:50px;background:transparent;border:1px solid var(--card-line);color:var(--muted);font-size:15px;padding:0 22px}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-ghost:disabled{opacity:.5;cursor:default}
+.controls .btn-ghost{width:96px;padding:0}
 
-.enable{margin-top:14px;width:100%;display:flex;align-items:center;justify-content:center;gap:9px;height:44px;border:1px solid var(--ph-border);border-radius:var(--r-md);background:var(--ph-bg);color:var(--accent);font-weight:600;font-size:14px;cursor:pointer}
+/* Spin wheel */
+.wheel-wrap{position:relative;width:236px;height:236px;margin:2px auto 0}
+.pointer{position:absolute;top:-3px;left:50%;transform:translateX(-50%);z-index:3;filter:drop-shadow(0 2px 3px rgba(15,27,42,.25))}
+.wheel{width:100%;height:100%;display:block}
+.wheel .rot{transform-origin:100px 100px;transition:transform 3.5s cubic-bezier(.15,.86,.24,1)}
+.wseg{stroke:var(--app-card);stroke-width:2}
+.wlabel{font-family:var(--font);font-weight:700;font-size:10px;letter-spacing:.02em}
+.wheel-hub{fill:var(--app-card);stroke:var(--card-line);stroke-width:2.5}
+.rand-status{margin-top:16px;font-weight:700;font-size:20px;letter-spacing:-.01em;color:var(--ink);font-variant-numeric:tabular-nums;min-height:26px}
+.rand-sub{margin-top:3px;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.rand-note{margin-top:14px;font-weight:500;font-size:12px;line-height:1.5;color:var(--muted)}
+.rand-note strong{color:var(--ink);font-weight:700}
+
+.enable{margin-top:16px;width:100%;display:flex;align-items:center;justify-content:center;gap:9px;height:44px;border:1px solid var(--ph-border);border-radius:var(--r-md);background:var(--ph-bg);color:var(--accent);font-weight:600;font-size:14px;cursor:pointer}
 .enable:hover{filter:brightness(.97)}
 .perm{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:500;font-size:12px;color:var(--muted)}
 .perm .dot{width:7px;height:7px;border-radius:var(--r-pill);background:var(--caution)}
 
-/* Scheduled breaks */
-.sched-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px;gap:10px}
-.eyebrow{font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent)}
-.next{font-weight:500;font-size:12px;color:var(--muted);text-align:right}
-.chips{display:flex;gap:11px}
-.chip{flex:1;display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--card-line);border-radius:var(--r-md)}
-.chip svg{flex:0 0 auto}
-.chip span{font-weight:600;font-size:15px;color:var(--ink)}
+/* Settings rows */
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;border-top:1px solid var(--card-line)}
+.set-row:first-of-type{border-top:none}
+.set-info{min-width:0}
+.set-title{font-weight:600;font-size:14px;color:var(--ink)}
+.set-desc{font-weight:500;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.45}
+.set-ctrl{flex:0 0 auto;display:flex;align-items:center;gap:10px}
+.switch{width:46px;height:27px;border-radius:var(--r-pill);padding:3px;display:flex;align-items:center;background:#cbd5e1;transition:background .2s ease;border:none;cursor:pointer}
+.switch.on{background:var(--accent)}
+.knob{width:21px;height:21px;border-radius:var(--r-pill);background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transform:translateX(0);transition:transform .2s ease;pointer-events:none}
+.switch.on .knob{transform:translateX(19px)}
+.mini-select,.time-in{font-family:var(--font);font-weight:600;font-size:13px;color:var(--ink);background:var(--app-card);border:1px solid var(--card-line);border-radius:var(--r-sm);padding:7px 9px;cursor:pointer}
+.time-in{cursor:text}
+.dash{color:var(--muted);font-weight:600}
+.eyebrow{font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);display:block;padding:14px 0 4px}
 
 /* Stretch library */
 .lib-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding:0 2px}
@@ -186,15 +191,9 @@ button{font-family:var(--font)}
 .btn-next{width:120px;height:48px;background:transparent;border:1px solid var(--card-line);border-radius:var(--r-pill);color:var(--ink);font-weight:600;font-size:14px;cursor:pointer}
 .btn-next:hover{border-color:var(--accent);color:var(--accent)}
 
-.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0 0 0 0);overflow:hidden}
-
-@media (max-width:340px){
-  .grid{grid-template-columns:1fr}
-  .controls{flex-wrap:wrap}
-  .btn-ghost{width:100%}
-}
+@media (max-width:340px){ .grid{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){
-  .fig *,.ping .a,.ring-fg,.btn{animation:none!important;transition:none!important}
+  .fig *,.ping .a,.ring-fg,.btn,.wheel .rot{animation:none!important;transition:none!important}
 }
 </style>
 </head>
@@ -210,29 +209,47 @@ button{font-family:var(--font)}
         <div class="tag">Move Every Hour. Feel Better.</div>
       </div>
     </div>
-    <button class="rem" id="remToggle" role="switch" aria-checked="true" aria-label="Pause scheduled reminders">
-      <span class="lbl">Reminders</span>
-      <span class="switch on" id="remSwitch"><span class="knob"></span></span>
-    </button>
+    <div class="day-pill" id="dayPill"><span class="d" id="dayDot"></span><span id="dayLabel">Active</span></div>
   </header>
 
-  <!-- Timer -->
-  <section class="card timer">
-    <div class="ring-wrap">
-      <svg viewBox="0 0 300 300" aria-hidden="true">
-        <circle class="ring-bg" cx="150" cy="150" r="130"></circle>
-        <circle class="ring-fg" id="ringFg" cx="150" cy="150" r="130"
-                transform="rotate(-90 150 150)" stroke-dasharray="816.81" stroke-dashoffset="0"></circle>
-      </svg>
-      <div class="ring-mid">
-        <div class="time" id="timeText" role="timer" aria-live="off">02:00</div>
-        <div class="cap" id="cap">2-minute desk reset</div>
+  <!-- Main box: Reset timer / Randomiser -->
+  <section class="card main">
+    <div class="seg" role="tablist" aria-label="Break mode">
+      <button id="segRand" role="tab" aria-selected="false">Randomiser</button>
+      <button id="segReset" class="active" role="tab" aria-selected="true">2-min Reset</button>
+    </div>
+
+    <!-- Reset view -->
+    <div id="viewReset">
+      <div class="ring-wrap">
+        <svg viewBox="0 0 300 300" aria-hidden="true">
+          <circle class="ring-bg" cx="150" cy="150" r="130"></circle>
+          <circle class="ring-fg" id="ringFg" cx="150" cy="150" r="130" transform="rotate(-90 150 150)" stroke-dasharray="816.81" stroke-dashoffset="0"></circle>
+        </svg>
+        <div class="ring-mid">
+          <div class="time" id="timeText" role="timer" aria-live="off">02:00</div>
+          <div class="cap" id="cap">2-minute desk reset</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn btn-primary" id="startBtn">Start 2-min timer</button>
+        <button class="btn btn-ghost" id="resetBtn">Reset</button>
       </div>
     </div>
 
-    <div class="controls">
-      <button class="btn btn-primary" id="startBtn">Start 2-min timer</button>
-      <button class="btn btn-ghost" id="resetBtn">Reset</button>
+    <!-- Randomiser view -->
+    <div id="viewRand" hidden>
+      <div class="wheel-wrap">
+        <svg class="pointer" width="24" height="20" viewBox="0 0 24 20" aria-hidden="true"><path d="M12 19 L2 3 Q12 8 22 3 Z" fill="var(--accent)"/></svg>
+        <div id="wheelHost"></div>
+      </div>
+      <div class="rand-status" id="randStatus">Randomiser is off</div>
+      <div class="rand-sub" id="randSub">Press start to begin</div>
+      <div class="controls">
+        <button class="btn btn-primary" id="randBtn">Start randomiser</button>
+        <button class="btn btn-ghost" id="spinBtn">Spin now</button>
+      </div>
+      <div class="rand-note">Fires a random stretch every <strong>20–45&nbsp;min</strong> during your active hours, then keeps going until you stop it or your day ends. Quiet on weekends.</div>
     </div>
 
     <button class="enable" id="enableBtn" hidden>
@@ -242,21 +259,51 @@ button{font-family:var(--font)}
     <div class="perm"><span class="dot" id="permDot"></span><span id="permLabel">Enable alerts to be reminded</span></div>
   </section>
 
-  <!-- Scheduled breaks -->
-  <section class="card sched">
-    <div class="sched-top">
-      <span class="eyebrow">Scheduled Breaks</span>
-      <span class="next" id="nextLine">Next · 11:00 AM today</span>
+  <!-- Settings -->
+  <section class="card settings">
+    <span class="eyebrow">Breaks &amp; Reminders</span>
+
+    <div class="set-row">
+      <div class="set-info">
+        <div class="set-title">Scheduled breaks</div>
+        <div class="set-desc" id="schedDesc">11:00 AM &amp; 3:00 PM · next 11:00 AM today</div>
+      </div>
+      <div class="set-ctrl"><button class="switch on" id="schedSwitch" role="switch" aria-checked="true" aria-label="Scheduled breaks"><span class="knob"></span></button></div>
     </div>
-    <div class="chips">
-      <div class="chip">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
-        <span>11:00 AM</span>
+
+    <div class="set-row">
+      <div class="set-info">
+        <div class="set-title">Posture flips</div>
+        <div class="set-desc" id="postureDesc">Switch between sitting and standing on a timer</div>
       </div>
-      <div class="chip">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
-        <span>3:00 PM</span>
+      <div class="set-ctrl">
+        <select class="mini-select" id="postureEvery" aria-label="Posture flip interval">
+          <option value="30">30 min</option>
+          <option value="45">45 min</option>
+          <option value="60">60 min</option>
+        </select>
+        <button class="switch" id="postureSwitch" role="switch" aria-checked="false" aria-label="Posture flips"><span class="knob"></span></button>
       </div>
+    </div>
+
+    <div class="set-row">
+      <div class="set-info">
+        <div class="set-title">Active hours</div>
+        <div class="set-desc">Randomiser &amp; posture flips only run in this window</div>
+      </div>
+      <div class="set-ctrl">
+        <input class="time-in" id="workStart" type="time" value="09:00" aria-label="Work start time">
+        <span class="dash">–</span>
+        <input class="time-in" id="workEnd" type="time" value="17:00" aria-label="Work end time">
+      </div>
+    </div>
+
+    <div class="set-row">
+      <div class="set-info">
+        <div class="set-title">Quiet on weekends</div>
+        <div class="set-desc">Pause all automatic reminders on Sat &amp; Sun</div>
+      </div>
+      <div class="set-ctrl"><button class="switch on" id="weekendSwitch" role="switch" aria-checked="true" aria-label="Quiet on weekends"><span class="knob"></span></button></div>
     </div>
   </section>
 
@@ -293,10 +340,6 @@ button{font-family:var(--font)}
     </div>
 
     <div class="demo">
-      <!-- Animated GIF illustration area.
-           Default: a built-in animated SVG demo of the stretch.
-           To use a real GIF instead, add  gif:'<url-or-dataURI>'  to the
-           matching stretch object below — it will render in this slot. -->
       <div id="demoArt" style="width:100%;height:100%"></div>
       <div class="demo-cap" id="demoCap">Animated guide</div>
     </div>
@@ -322,10 +365,12 @@ button{font-family:var(--font)}
     shoulders:'<svg class="fig fig-shoulders" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><circle class="hd" cx="60" cy="26" r="11"/><line class="ln" x1="60" y1="37" x2="60" y2="80"/><g class="roll"><path class="ln" d="M60 48 L40 56 L40 74"/><path class="ln" d="M60 48 L80 56 L80 74"/></g></g></svg>',
     twist:'<svg class="fig fig-twist" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><line class="ln" x1="40" y1="86" x2="80" y2="86"/><g class="twist"><circle class="hd" cx="60" cy="30" r="11"/><line class="ln" x1="60" y1="41" x2="60" y2="82"/><path class="ln" d="M60 53 L42 61"/><path class="ln" d="M60 53 L80 48"/></g></g></svg>',
     wrist:'<svg class="fig fig-wrist" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><line class="ln" x1="26" y1="58" x2="74" y2="58"/><g class="flex"><line class="ln" x1="74" y1="58" x2="93" y2="58"/><line class="ln" x1="93" y1="58" x2="99" y2="53"/></g><path class="ln" d="M48 58 q-7 -15 7 -19"/></g></svg>',
-    chest:'<svg class="fig fig-chest" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><circle class="hd" cx="60" cy="28" r="11"/><line class="ln" x1="60" y1="39" x2="60" y2="80"/><g class="open"><path class="ln" d="M60 50 L42 62"/><path class="ln" d="M60 50 L78 62"/></g></g></svg>'
+    chest:'<svg class="fig fig-chest" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><circle class="hd" cx="60" cy="28" r="11"/><line class="ln" x1="60" y1="39" x2="60" y2="80"/><g class="open"><path class="ln" d="M60 50 L42 62"/><path class="ln" d="M60 50 L78 62"/></g></g></svg>',
+    stand:'<svg class="fig" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><circle class="hd" cx="60" cy="22" r="11"/><line class="ln" x1="60" y1="33" x2="60" y2="62"/><path class="ln" d="M60 42 L46 56"/><path class="ln" d="M60 42 L74 56"/><path class="ln" d="M60 62 L50 88"/><path class="ln" d="M60 62 L70 88"/></g></svg>',
+    sit:'<svg class="fig" viewBox="0 0 120 100" aria-hidden="true"><g class="breath"><circle class="hd" cx="50" cy="26" r="11"/><line class="ln" x1="50" y1="37" x2="50" y2="60"/><path class="ln" d="M50 45 L64 56"/><path class="ln" d="M50 60 L78 60 L78 84"/><path class="ln" d="M40 60 L40 84"/><line class="ln" x1="36" y1="84" x2="82" y2="84"/></g></svg>'
   };
 
-  /* ---------- Stretch library (from the Affirmer DeskFlex comp) ---------- */
+  /* ---------- Stretch library ---------- */
   var stretches = [
     { title:'Neck Release', area:'Neck', duration:'45 sec', move:'neck',
       subtitle:'Eases tension built up from looking down at screens.',
@@ -344,30 +389,54 @@ button{font-family:var(--font)}
       steps:['Sit or stand tall and clasp your hands behind your back.','Straighten your arms and lift your hands slightly.','Squeeze your shoulder blades together to open the chest.','Hold for 20 seconds and breathe deeply.'] }
   ];
 
+  var posture = {
+    stand:{ title:'Time to Stand Up', move:'stand',
+      cue:'You\u2019ve been sitting a while. Stand tall, roll your shoulders back, and settle your weight evenly over both feet for a minute or two.' },
+    sit:{ title:'Time to Sit Down', move:'sit',
+      cue:'Take the load off for a bit. Sit back fully, both feet flat on the floor, and bring the top of your screen to eye level.' }
+  };
+
   /* ---------- State ---------- */
-  var TOTAL = 120;                       // 2-minute timer
-  var ringC = 2 * Math.PI * 130;         // ring circumference
+  var TOTAL = 120, ringC = 2*Math.PI*130;
   var times = [ {h:11,m:0,label:'11:00 AM'}, {h:15,m:0,label:'3:00 PM'} ];
   var fired = {};
-  var st = { timeLeft:TOTAL, running:false, remindersOn:true, breakActive:false, preview:false, idx:0 };
-  var perm = (typeof Notification !== 'undefined') ? Notification.permission : 'unsupported';
-  var actx = null, lastFocus = null, titleFlash = null;
+  var st = {
+    mode:'reset',
+    timeLeft:TOTAL, running:false,
+    randOn:false, randNextAt:0, spinning:false, wheelRot:0,
+    randMin:20, randMax:45,
+    postureOn:false, postureEvery:30, postureNextAt:0, postureState:'sit',
+    scheduledOn:true, weekendQuiet:true, workStart:'09:00', workEnd:'17:00',
+    breakActive:false, preview:false, modalType:'stretch', idx:0
+  };
+  var perm = (typeof Notification!=='undefined') ? Notification.permission : 'unsupported';
+  var actx=null, lastFocus=null, titleFlash=null;
 
-  /* ---------- Element refs ---------- */
   var $ = function(id){ return document.getElementById(id); };
   var els = {
-    timeText:$('timeText'), cap:$('cap'), ringFg:$('ringFg'),
-    startBtn:$('startBtn'), resetBtn:$('resetBtn'),
+    segReset:$('segReset'), segRand:$('segRand'), viewReset:$('viewReset'), viewRand:$('viewRand'),
+    timeText:$('timeText'), cap:$('cap'), ringFg:$('ringFg'), startBtn:$('startBtn'), resetBtn:$('resetBtn'),
+    wheelHost:$('wheelHost'), randStatus:$('randStatus'), randSub:$('randSub'), randBtn:$('randBtn'), spinBtn:$('spinBtn'),
     enableBtn:$('enableBtn'), permDot:$('permDot'), permLabel:$('permLabel'),
-    remToggle:$('remToggle'), remSwitch:$('remSwitch'), nextLine:$('nextLine'),
+    dayDot:$('dayDot'), dayLabel:$('dayLabel'),
+    schedSwitch:$('schedSwitch'), schedDesc:$('schedDesc'),
+    postureSwitch:$('postureSwitch'), postureEvery:$('postureEvery'), postureDesc:$('postureDesc'),
+    workStart:$('workStart'), workEnd:$('workEnd'), weekendSwitch:$('weekendSwitch'),
     tryBtn:$('tryBtn'), grid:$('grid'),
-    overlay:$('overlay'), modal:$('modal'), mBadge:$('mBadge'), mNum:$('mNum'),
-    demoArt:$('demoArt'), demoCap:$('demoCap'), mTitle:$('mTitle'), mSub:$('mSub'),
-    steps:$('steps'), doneBtn:$('doneBtn'), nextBtn:$('nextBtn'), closeBtn:$('closeBtn')
+    overlay:$('overlay'), mBadge:$('mBadge'), mNum:$('mNum'), demoArt:$('demoArt'), demoCap:$('demoCap'),
+    mTitle:$('mTitle'), mSub:$('mSub'), steps:$('steps'), doneBtn:$('doneBtn'), nextBtn:$('nextBtn'), closeBtn:$('closeBtn')
   };
 
   /* ---------- Helpers ---------- */
   function fmt(s){ var m=Math.floor(s/60), ss=s%60; return ('0'+m).slice(-2)+':'+('0'+ss).slice(-2); }
+  function pad(n){ return ('0'+n).slice(-2); }
+  function hm(str){ var p=(str||'0:0').split(':'); return (parseInt(p[0],10)||0)*60 + (parseInt(p[1],10)||0); }
+  function isWeekend(d){ var g=d.getDay(); return g===0 || g===6; }
+  function inWork(d){ var m=d.getHours()*60+d.getMinutes(); return m>=hm(st.workStart) && m<hm(st.workEnd); }
+  function canAuto(d){ return (!st.weekendQuiet || !isWeekend(d)) && inWork(d); }
+  function canSchedule(d){ return (!st.weekendQuiet || !isWeekend(d)); }
+  function randIdx(){ return Math.floor(Math.random()*stretches.length); }
+  function randInterval(){ return (st.randMin + Math.random()*(st.randMax-st.randMin))*60000; }
 
   function nextBreakText(){
     var d=new Date();
@@ -378,181 +447,267 @@ button{font-family:var(--font)}
     return times[0].label+' tomorrow';
   }
 
-  /* ---------- Audio: gentle ascending chime (no external files) ---------- */
+  /* ---------- Audio / alerts ---------- */
   function ensureAudio(){
-    if(!actx){ try{ actx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
+    if(!actx){ try{ actx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
     if(actx && actx.state==='suspended'){ actx.resume(); }
     return actx;
   }
   function playChime(){
     var ctx=ensureAudio(); if(!ctx) return;
-    var notes=[523.25,659.25,783.99];   // C5 E5 G5
-    function pass(start){
-      notes.forEach(function(f,i){
-        var o=ctx.createOscillator(), g=ctx.createGain();
-        o.type='sine'; o.frequency.value=f;
-        var t=start+i*0.17;
-        g.gain.setValueAtTime(0,t);
-        g.gain.linearRampToValueAtTime(0.16,t+0.04);
-        g.gain.exponentialRampToValueAtTime(0.0008,t+1.4);
-        o.connect(g); g.connect(ctx.destination);
-        o.start(t); o.stop(t+1.5);
-      });
-    }
-    var now=ctx.currentTime; pass(now); pass(now+0.62);   // two passes = a touch louder / harder to miss
+    var notes=[523.25,659.25,783.99];
+    function pass(start){ notes.forEach(function(f,i){
+      var o=ctx.createOscillator(), g=ctx.createGain();
+      o.type='sine'; o.frequency.value=f; var t=start+i*0.17;
+      g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(0.16,t+0.04);
+      g.gain.exponentialRampToValueAtTime(0.0008,t+1.4);
+      o.connect(g); g.connect(ctx.destination); o.start(t); o.stop(t+1.5);
+    }); }
+    var now=ctx.currentTime; pass(now); pass(now+0.62);
   }
   function buzz(){ if(navigator.vibrate){ try{ navigator.vibrate([120,80,120]); }catch(e){} } }
-
-  /* ---------- Desktop notification ---------- */
-  function notify(s){
-    if(perm==='granted' && st.remindersOn && typeof Notification!=='undefined'){
-      try{ new Notification('DeskFlex — Time to Move', { body:s.title+' · '+s.duration, tag:'deskflex' }); }catch(e){}
-    }
+  function notify(kind){
+    if(perm!=='granted' || typeof Notification==='undefined') return;
+    try{
+      if(kind==='posture'){
+        new Notification('DeskFlex — Posture Check', { body:posture[st.postureState].title, tag:'deskflex' });
+      } else {
+        var s=stretches[st.idx];
+        new Notification('DeskFlex — Time to Move', { body:s.title+' · '+s.duration, tag:'deskflex' });
+      }
+    }catch(e){}
   }
   function flashTitle(){
     if(!document.hidden) return;
     var base='DeskFlex — Desk break reminders by Affirmer', on=true;
     clearInterval(titleFlash);
-    titleFlash=setInterval(function(){ document.title = on ? 'Time to move — DeskFlex' : base; on=!on; },900);
+    titleFlash=setInterval(function(){ document.title = on?'Time to move — DeskFlex':base; on=!on; },900);
     var stop=function(){ clearInterval(titleFlash); document.title=base; document.removeEventListener('visibilitychange',stop); };
     document.addEventListener('visibilitychange',stop);
   }
 
+  /* ---------- Wheel ---------- */
+  function pt(cx,cy,r,deg){ var a=(deg-90)*Math.PI/180; return [cx+r*Math.cos(a), cy+r*Math.sin(a)]; }
+  function buildWheel(){
+    var cx=100,cy=100,r=92,n=stretches.length,seg=360/n;
+    var fills=['var(--blue-500)','var(--blue-300)','var(--blue-600)','var(--blue-200)','var(--blue-400)'];
+    var inks =['#ffffff','#0f1b2a','#ffffff','#0f1b2a','#ffffff'];
+    var body='';
+    for(var i=0;i<n;i++){
+      var a0=i*seg-seg/2, a1=i*seg+seg/2;
+      var p0=pt(cx,cy,r,a0), p1=pt(cx,cy,r,a1);
+      body+='<path class="wseg" d="M'+cx+' '+cy+' L'+p0[0].toFixed(2)+' '+p0[1].toFixed(2)+' A'+r+' '+r+' 0 0 1 '+p1[0].toFixed(2)+' '+p1[1].toFixed(2)+' Z" fill="'+fills[i%fills.length]+'"></path>';
+      var lp=pt(cx,cy,r*0.62,i*seg);
+      body+='<text class="wlabel" x="'+lp[0].toFixed(2)+'" y="'+lp[1].toFixed(2)+'" fill="'+inks[i%inks.length]+'" text-anchor="middle" dominant-baseline="middle">'+stretches[i].area+'</text>';
+    }
+    return '<svg class="wheel" viewBox="0 0 200 200" aria-hidden="true"><g class="rot" id="wheelRot">'+body+'</g><circle class="wheel-hub" cx="100" cy="100" r="19"></circle></svg>';
+  }
+
+  function doSpin(i){
+    if(st.spinning) return;
+    st.spinning=true;
+    if(st.mode!=='randomiser'){ st.mode='randomiser'; renderMode(); }
+    var rot=$('wheelRot');
+    var spins=4+Math.floor(Math.random()*3);
+    var target=(360 - i*72)%360;
+    var base=st.wheelRot - (st.wheelRot%360);
+    var fin=base+target+360*spins;
+    if(fin<=st.wheelRot+180) fin+=360;
+    st.wheelRot=fin;
+    if(rot) rot.style.transform='rotate('+fin+'deg)';
+    renderRand();
+    var done=false;
+    function finish(){
+      if(done) return; done=true;
+      if(rot) rot.removeEventListener('transitionend',finish);
+      st.spinning=false;
+      openBreak(i,'stretch',false);
+      if(st.randOn) st.randNextAt=Date.now()+randInterval();
+      renderRand();
+    }
+    if(rot) rot.addEventListener('transitionend',finish);
+    setTimeout(finish,3700);
+  }
+
   /* ---------- Renderers ---------- */
+  function renderMode(){
+    var r=st.mode==='reset';
+    els.viewReset.hidden=!r; els.viewRand.hidden=r;
+    els.segReset.classList.toggle('active',r); els.segRand.classList.toggle('active',!r);
+    els.segReset.setAttribute('aria-selected',String(r)); els.segRand.setAttribute('aria-selected',String(!r));
+  }
   function renderTimer(){
-    els.timeText.textContent = fmt(st.timeLeft);
-    els.ringFg.setAttribute('stroke-dasharray', ringC.toFixed(2));
-    els.ringFg.setAttribute('stroke-dashoffset', (ringC*(1 - st.timeLeft/TOTAL)).toFixed(2));
-    els.cap.textContent = st.running ? 'Stretch coming up' : '2-minute desk reset';
-    els.startBtn.textContent = st.running ? 'Pause'
-      : (st.timeLeft===TOTAL ? 'Start 2-min timer' : 'Resume');
+    els.timeText.textContent=fmt(st.timeLeft);
+    els.ringFg.setAttribute('stroke-dasharray',ringC.toFixed(2));
+    els.ringFg.setAttribute('stroke-dashoffset',(ringC*(1-st.timeLeft/TOTAL)).toFixed(2));
+    els.cap.textContent=st.running?'Stretch coming up':'2-minute desk reset';
+    els.startBtn.textContent=st.running?'Pause':(st.timeLeft===TOTAL?'Start 2-min timer':'Resume');
   }
-
+  function renderRand(){
+    els.randBtn.textContent=st.randOn?'Stop randomiser':'Start randomiser';
+    els.spinBtn.disabled=st.spinning;
+    var d=new Date();
+    if(st.spinning){ els.randStatus.textContent='Spinning…'; els.randSub.textContent='Landing on your next stretch'; return; }
+    if(!st.randOn){ els.randStatus.textContent='Randomiser is off'; els.randSub.textContent='Press start to begin'; return; }
+    if(!canAuto(d)){
+      els.randStatus.textContent='Paused';
+      els.randSub.textContent = (st.weekendQuiet && isWeekend(d)) ? 'Quiet for the weekend' : ('Outside '+st.workStart+'–'+st.workEnd);
+      return;
+    }
+    var s=Math.ceil(Math.max(0,st.randNextAt-Date.now())/1000);
+    els.randStatus.textContent=pad(Math.floor(s/60))+':'+pad(s%60);
+    els.randSub.textContent='Until your next stretch';
+  }
   function renderPerm(){
-    var map = {
-      granted:{label:'Desktop alerts are on', dot:'var(--accent)'},
-      denied:{label:'Alerts blocked in browser settings', dot:'var(--danger)'},
-      'default':{label:'Enable alerts to be reminded', dot:'var(--caution)'},
-      unsupported:{label:'Desktop alerts not supported here', dot:'var(--ink-400)'}
-    };
-    var pm = map[perm] || map['default'];
-    els.permLabel.textContent = pm.label;
-    els.permDot.style.background = pm.dot;
-    els.enableBtn.hidden = (perm!=='default');
+    var map={granted:{label:'Desktop alerts are on',dot:'var(--accent)'},denied:{label:'Alerts blocked in browser settings',dot:'var(--danger)'},'default':{label:'Enable alerts to be reminded',dot:'var(--caution)'},unsupported:{label:'Desktop alerts not supported here',dot:'var(--ink-400)'}};
+    var pm=map[perm]||map['default'];
+    els.permLabel.textContent=pm.label; els.permDot.style.background=pm.dot;
+    els.enableBtn.hidden=(perm!=='default');
   }
-
-  function renderReminders(){
-    els.remSwitch.classList.toggle('on', st.remindersOn);
-    els.remToggle.setAttribute('aria-checked', String(st.remindersOn));
-    els.remToggle.setAttribute('aria-label', st.remindersOn ? 'Pause scheduled reminders' : 'Resume scheduled reminders');
-    els.nextLine.textContent = st.remindersOn ? ('Next · '+nextBreakText()) : 'Reminders paused';
+  function renderDay(){
+    var d=new Date(), active=canAuto(d);
+    els.dayDot.classList.toggle('off',!active);
+    els.dayLabel.textContent = active ? 'Active hours' : ((st.weekendQuiet && isWeekend(d)) ? 'Weekend — quiet' : 'Outside hours');
   }
-
+  function renderSettings(){
+    els.schedSwitch.classList.toggle('on',st.scheduledOn);
+    els.schedSwitch.setAttribute('aria-checked',String(st.scheduledOn));
+    els.schedDesc.textContent = st.scheduledOn ? ('11:00 AM & 3:00 PM · next '+nextBreakText()) : '11:00 AM & 3:00 PM · paused';
+    els.postureSwitch.classList.toggle('on',st.postureOn);
+    els.postureSwitch.setAttribute('aria-checked',String(st.postureOn));
+    els.postureDesc.textContent = st.postureOn ? ('Switching sit ↔ stand every '+st.postureEvery+' min') : 'Switch between sitting and standing on a timer';
+    els.weekendSwitch.classList.toggle('on',st.weekendQuiet);
+    els.weekendSwitch.setAttribute('aria-checked',String(st.weekendQuiet));
+    renderDay();
+  }
   function renderGrid(){
     var html='';
     for(var i=0;i<stretches.length;i++){
       var s=stretches[i];
-      html += '<button class="scard" data-i="'+i+'">'
-            +   '<div class="thumb">'+(s.gif?'<img class="demo-gif" src="'+s.gif+'" alt="">':FIG[s.move])+'</div>'
-            +   '<div><div class="t-title">'+s.title+'</div>'
-            +     '<div class="meta"><span class="pill">'+s.area+'</span><span class="dur">'+s.duration+'</span></div>'
-            +   '</div>'
-            + '</button>';
+      html+='<button class="scard" data-i="'+i+'"><div class="thumb">'+(s.gif?'<img class="demo-gif" src="'+s.gif+'" alt="">':FIG[s.move])+'</div><div><div class="t-title">'+s.title+'</div><div class="meta"><span class="pill">'+s.area+'</span><span class="dur">'+s.duration+'</span></div></div></button>';
     }
-    els.grid.innerHTML = html;
-    Array.prototype.forEach.call(els.grid.querySelectorAll('.scard'), function(b){
-      b.addEventListener('click', function(){ openStretch(parseInt(b.getAttribute('data-i'),10), true); });
+    els.grid.innerHTML=html;
+    Array.prototype.forEach.call(els.grid.querySelectorAll('.scard'),function(b){
+      b.addEventListener('click',function(){ openBreak(parseInt(b.getAttribute('data-i'),10),'stretch',true); });
     });
   }
-
   function renderModal(){
-    var s=stretches[st.idx];
-    els.mBadge.textContent = st.preview ? 'Preview' : 'Time to move';
-    els.mNum.textContent = (st.idx+1)+' of '+stretches.length;
-    els.demoArt.innerHTML = s.gif ? '<img class="demo-gif" src="'+s.gif+'" alt="Animated demonstration of '+s.title+'">' : FIG[s.move];
-    els.demoCap.textContent = 'Animated guide · '+s.area+' · '+s.duration;
-    els.mTitle.textContent = s.title;
-    els.mSub.textContent = s.subtitle;
-    var steps='';
-    for(var i=0;i<s.steps.length;i++){
-      steps += '<li class="step"><span class="n">'+(i+1)+'</span><span class="tx">'+s.steps[i]+'</span></li>';
+    if(st.modalType==='posture'){
+      var p=posture[st.postureState];
+      els.mBadge.textContent = st.preview?'Preview':'Posture check';
+      els.mNum.hidden=true; els.steps.hidden=true; els.nextBtn.hidden=true;
+      els.demoArt.innerHTML=FIG[p.move]; els.demoCap.textContent='Posture flip · '+(st.postureState==='stand'?'Stand':'Sit');
+      els.mTitle.textContent=p.title; els.mSub.textContent=p.cue;
+    } else {
+      var s=stretches[st.idx];
+      els.mBadge.textContent = st.preview?'Preview':'Time to move';
+      els.mNum.hidden=false; els.steps.hidden=false; els.nextBtn.hidden=false;
+      els.mNum.textContent=(st.idx+1)+' of '+stretches.length;
+      els.demoArt.innerHTML = s.gif ? '<img class="demo-gif" src="'+s.gif+'" alt="Animated demonstration of '+s.title+'">' : FIG[s.move];
+      els.demoCap.textContent='Animated guide · '+s.area+' · '+s.duration;
+      els.mTitle.textContent=s.title; els.mSub.textContent=s.subtitle;
+      var steps='';
+      for(var i=0;i<s.steps.length;i++) steps+='<li class="step"><span class="n">'+(i+1)+'</span><span class="tx">'+s.steps[i]+'</span></li>';
+      els.steps.innerHTML=steps;
     }
-    els.steps.innerHTML = steps;
   }
-
   function renderOverlay(){
-    els.overlay.classList.toggle('show', st.breakActive);
-    els.overlay.setAttribute('aria-hidden', String(!st.breakActive));
-    document.body.style.overflow = st.breakActive ? 'hidden' : '';
+    els.overlay.classList.toggle('show',st.breakActive);
+    els.overlay.setAttribute('aria-hidden',String(!st.breakActive));
+    document.body.style.overflow = st.breakActive?'hidden':'';
   }
 
   /* ---------- Actions ---------- */
-  function openStretch(i, preview){
-    st.idx=i; st.breakActive=true; st.preview=!!preview;
-    renderModal(); renderOverlay();
-    if(!preview){ playChime(); buzz(); notify(stretches[i]); flashTitle(); }
-    lastFocus = document.activeElement;
-    setTimeout(function(){ els.doneBtn.focus(); }, 60);
+  function openBreak(i,type,preview){
+    st.modalType=type; st.preview=preview;
+    if(type==='posture'){ st.postureState=(st.postureState==='sit'?'stand':'sit'); }
+    else { st.idx=(i==null?randIdx():i); }
+    st.breakActive=true; renderModal(); renderOverlay();
+    if(!preview){ playChime(); buzz(); notify(type); flashTitle(); }
+    lastFocus=document.activeElement; setTimeout(function(){ els.doneBtn.focus(); },60);
   }
-  function randIdx(){ return Math.floor(Math.random()*stretches.length); }
+  function completeBreak(){ st.breakActive=false; st.preview=false; renderOverlay(); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+  function nextStretch(){ if(st.modalType!=='stretch') return; st.idx=(st.idx+1)%stretches.length; renderModal(); }
 
-  function toggleTimer(){
-    st.running = !st.running;
-    if(st.running){ ensureAudio(); if(st.timeLeft<=0) st.timeLeft=TOTAL; }
-    renderTimer();
-  }
+  function toggleTimer(){ st.running=!st.running; if(st.running){ ensureAudio(); if(st.timeLeft<=0) st.timeLeft=TOTAL; } renderTimer(); }
   function resetTimer(){ st.running=false; st.timeLeft=TOTAL; renderTimer(); }
-  function completeBreak(){
-    st.breakActive=false; st.preview=false; renderOverlay();
-    if(lastFocus && lastFocus.focus){ lastFocus.focus(); }
-  }
-  function nextStretch(){ st.idx=(st.idx+1)%stretches.length; renderModal(); }
-  function toggleReminders(){ st.remindersOn=!st.remindersOn; renderReminders(); }
-  function testAlert(){ ensureAudio(); openStretch(randIdx(), false); }
+
+  function startRandomiser(){ st.randOn=true; ensureAudio(); st.randNextAt=Date.now()+randInterval(); renderRand(); }
+  function stopRandomiser(){ st.randOn=false; st.randNextAt=0; renderRand(); }
+
+  function setMode(m){ st.mode=m; renderMode(); if(m==='randomiser') renderRand(); else renderTimer(); }
 
   function requestPermission(){
     if(typeof Notification==='undefined') return;
     Notification.requestPermission().then(function(p){
       perm=p; renderPerm();
-      if(p==='granted'){ try{ new Notification('DeskFlex', {body:'Reminders are on — we\u2019ll nudge you to move.', tag:'deskflex'}); }catch(e){} }
+      if(p==='granted'){ try{ new Notification('DeskFlex',{body:'Reminders are on — we\u2019ll nudge you to move.',tag:'deskflex'}); }catch(e){} }
     });
   }
 
   function checkSchedule(){
-    if(!st.remindersOn) return;
-    var d=new Date();
+    if(!st.scheduledOn) return;
+    var d=new Date(); if(!canSchedule(d)) return;
     for(var i=0;i<times.length;i++){
       var t=times[i];
       if(d.getHours()===t.h && d.getMinutes()===t.m){
         var k=d.toDateString()+'-'+t.h+':'+t.m;
-        if(!fired[k]){ fired[k]=true; openStretch(randIdx(), false); }
+        if(!fired[k] && !st.breakActive && !st.spinning){ fired[k]=true; openBreak(randIdx(),'stretch',false); }
       }
     }
   }
 
   /* ---------- Wire up ---------- */
-  els.startBtn.addEventListener('click', toggleTimer);
-  els.resetBtn.addEventListener('click', resetTimer);
-  els.enableBtn.addEventListener('click', requestPermission);
-  els.remToggle.addEventListener('click', toggleReminders);
-  els.tryBtn.addEventListener('click', testAlert);
-  els.doneBtn.addEventListener('click', completeBreak);
-  els.closeBtn.addEventListener('click', completeBreak);
-  els.nextBtn.addEventListener('click', nextStretch);
-  els.overlay.addEventListener('click', function(e){ if(e.target===els.overlay) completeBreak(); });
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && st.breakActive) completeBreak(); });
+  els.segReset.addEventListener('click',function(){ setMode('reset'); });
+  els.segRand.addEventListener('click',function(){ setMode('randomiser'); });
+  els.startBtn.addEventListener('click',toggleTimer);
+  els.resetBtn.addEventListener('click',resetTimer);
+  els.randBtn.addEventListener('click',function(){ st.randOn?stopRandomiser():startRandomiser(); });
+  els.spinBtn.addEventListener('click',function(){ ensureAudio(); if(!st.spinning) doSpin(randIdx()); });
+  els.enableBtn.addEventListener('click',requestPermission);
+  els.tryBtn.addEventListener('click',function(){ ensureAudio(); openBreak(randIdx(),'stretch',false); });
+  els.doneBtn.addEventListener('click',completeBreak);
+  els.closeBtn.addEventListener('click',completeBreak);
+  els.nextBtn.addEventListener('click',nextStretch);
+  els.overlay.addEventListener('click',function(e){ if(e.target===els.overlay) completeBreak(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&st.breakActive) completeBreak(); });
+
+  function toggleSwitch(key,after){ return function(){ st[key]=!st[key]; if(after) after(); renderSettings(); }; }
+  els.schedSwitch.addEventListener('click',toggleSwitch('scheduledOn'));
+  els.weekendSwitch.addEventListener('click',toggleSwitch('weekendQuiet',function(){ renderRand(); }));
+  els.postureSwitch.addEventListener('click',toggleSwitch('postureOn',function(){ st.postureNextAt = st.postureOn ? (Date.now()+st.postureEvery*60000) : 0; }));
+  els.postureEvery.addEventListener('change',function(){ st.postureEvery=parseInt(els.postureEvery.value,10)||30; if(st.postureOn) st.postureNextAt=Date.now()+st.postureEvery*60000; renderSettings(); });
+  els.workStart.addEventListener('change',function(){ st.workStart=els.workStart.value||'09:00'; renderSettings(); renderRand(); });
+  els.workEnd.addEventListener('change',function(){ st.workEnd=els.workEnd.value||'17:00'; renderSettings(); renderRand(); });
 
   /* ---------- Loops ---------- */
   setInterval(function(){
-    if(!st.running) return;
-    var t = st.timeLeft - 1;
-    if(t<=0){ st.timeLeft=TOTAL; st.running=false; renderTimer(); openStretch(randIdx(), false); }
-    else { st.timeLeft=t; renderTimer(); }
-  }, 1000);
-  setInterval(function(){ checkSchedule(); renderReminders(); }, 15000);
+    var now=Date.now(), d=new Date();
+    if(st.mode==='reset' && st.running){
+      var t=st.timeLeft-1;
+      if(t<=0){ st.timeLeft=TOTAL; st.running=false; renderTimer(); openBreak(randIdx(),'stretch',false); }
+      else { st.timeLeft=t; renderTimer(); }
+    }
+    if(st.randOn){
+      if(canAuto(d)){
+        if(!st.randNextAt) st.randNextAt=now+randInterval();
+        if(now>=st.randNextAt && !st.spinning && !st.breakActive) doSpin(randIdx());
+      } else { st.randNextAt=0; }
+      if(st.mode==='randomiser') renderRand();
+    }
+    if(st.postureOn){
+      if(canAuto(d)){
+        if(!st.postureNextAt) st.postureNextAt=now+st.postureEvery*60000;
+        if(now>=st.postureNextAt && !st.spinning && !st.breakActive){ openBreak(null,'posture',false); st.postureNextAt=now+st.postureEvery*60000; }
+      } else { st.postureNextAt=0; }
+    }
+  },1000);
+
+  setInterval(function(){ checkSchedule(); renderSettings(); },15000);
 
   /* ---------- First paint ---------- */
-  renderGrid(); renderTimer(); renderPerm(); renderReminders(); renderModal();
+  els.wheelHost.innerHTML=buildWheel();
+  renderMode(); renderTimer(); renderRand(); renderPerm(); renderSettings(); renderGrid(); renderModal();
 })();
 </script>
 </body>
